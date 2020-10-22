@@ -1,4 +1,4 @@
-package piece;
+package Model;
 
 public class Piece {
     public static final int GLASS = 10;
@@ -8,6 +8,8 @@ public class Piece {
 
     protected int color;
     protected int point;
+    private boolean isAnimal;
+    private boolean isInTheTrap;
     protected String name;
     protected Coordinate coordinate;
 
@@ -35,10 +37,32 @@ public class Piece {
         this.coordinate = coordinate;
     }
 
+    public boolean isAnimal() {
+        return isAnimal;
+    }
+
+    public void setAnimal(boolean animal) {
+        isAnimal = animal;
+    }
+
+    public boolean isInTheTrap() {
+        return isInTheTrap;
+    }
+
+    public void setInTheTrap(boolean inTheTrap) {
+        isInTheTrap = inTheTrap;
+    }
+
+    public Piece(int color, int point, boolean isAnimal, String name, Coordinate coordinate) {
+        this.color = color;
+        this.point = point;
+        this.isAnimal = isAnimal;
+        this.name = name;
+        this.coordinate = coordinate;
+    }
+
     public Piece(int _color, Coordinate _coordinate) {
-        this.color = _color;
-        this.coordinate = _coordinate;
-        this.name = "";
+        this(_color, 0, false, "", _coordinate);
     }
 
     public int getTypeOfLand(){

@@ -1,12 +1,12 @@
-package piece;
+package Model;
 
 import java.util.List;
 
 public class Cat extends Animal {
-    public Cat(int _color, Coordinate _coordinate) {
-        super(_color, _coordinate);
-        this.name = "Cat";
-        this.point = 1;
+
+
+    public Cat(int color, Coordinate coordinate) {
+        super(color, 2, true, "Cat", coordinate);
     }
 
     @Override

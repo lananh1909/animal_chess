@@ -1,24 +1,8 @@
-package piece;
+package Model;
 
 public class Coordinate {
     private int iRow;
     private int iCol;
-
-    public Ground getKind() {
-        return kind;
-    }
-
-    public void setKind(Ground kind) {
-        this.kind = kind;
-    }
-
-    private Ground kind;
-
-    public Coordinate(int _iRow, int _iCol, Ground kind) {
-        this.iRow = _iRow;
-        this.iCol = _iCol;
-        this.kind = kind;
-    }
 
     public Coordinate(int _iRow, int _iCol) {
         this.iRow = _iRow;
