@@ -8,7 +8,7 @@ public class Cheetah extends Animal {
     }
 
     @Override
-    public List<Coordinate> getPossibleMove(Piece[][] var1) {
+    public List<Piece> getPossibleMove(Piece[][] var1) {
         return null;
     }
 }
